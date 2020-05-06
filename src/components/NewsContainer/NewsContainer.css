@@ -1,0 +1,10 @@
+main {
+    width: 70%;
+    height: 100%;
+    margin: 2%;
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+

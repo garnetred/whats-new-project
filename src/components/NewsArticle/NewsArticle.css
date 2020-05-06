@@ -1,0 +1,34 @@
+.article {
+    height: 37%;
+    margin: 2%;
+    width: 40%;
+    background: #FFFFFF;
+    border: 1px solid #9F9E9E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 2%;
+
+}
+
+.article-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+figure > img{
+    height: 125px;
+    width: 125px;
+    object-fit: cover;
+}
+
+.article-title {
+    font-size: 16px;
+}
+
+
+
+.article-description {
+    font-size: 12px;
+}
+

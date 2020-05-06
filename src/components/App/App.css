@@ -4,10 +4,43 @@
   padding: 0;
 }
 
-.app {
-  display: flex;
-  background: #141527;
+html, body {
   height: 100vh;
-  text-align: center;
-  width: 100%;
+  overflow: auto;
+
 }
+
+.app {
+  /* display: flex;
+  flex-direction: row; */
+  height: 100vh;
+  width: 100%;
+  font-family: 'American Typewriter', sans-serif;
+  overflow: auto;
+}
+
+ nav {
+   display: flex;
+   flex-direction: row;
+   background: #1A1818;
+   align-items: center;
+ }
+
+ .logo {
+   white-space: nowrap;
+   font-size: 50px;
+   color: #5789FF;
+   font-weight: bold;
+   text-align: center;
+   margin-left: 2%;
+ }
+
+ .horizontal-bars {
+   height: 31px;
+   margin-left: 2%;
+ }
+
+ .main-page {
+   display: flex;
+   flex-direction: row;
+ }

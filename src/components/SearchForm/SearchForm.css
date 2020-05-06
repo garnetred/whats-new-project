@@ -1,0 +1,13 @@
+form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-left: 45%;
+}
+
+input {
+    font-size: 25px;
+    border-radius: 10px;
+    align-items: right;
+    justify-content: flex-end;
+}

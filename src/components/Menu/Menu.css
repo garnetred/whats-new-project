@@ -1,0 +1,18 @@
+aside {
+    width: 30%;
+    height: 100vh;
+    background-color: #1A1818;
+}
+
+.menu-item {
+    font-size: 40px;
+    color: #F5F5F5;
+    margin-top: 10%;
+    font-weight: normal;
+    height: 100%;
+}
+
+li {
+    margin: 3% 25%;
+    list-style-type: none;
+}
