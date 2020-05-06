@@ -3,18 +3,18 @@ import "./NewsArticle.css";
 
 // NEWSARTICLE COMPONENT CODE GOES HERE
 
-const NewsArticle = () => {
+const NewsArticle = (props) => {
   //maybe I need to pass props in somehow?
   return (
     <article className="article">
         <section className="article-info">
-        <h1 className="article-title">Article Title</h1>
+        <h2 className="article-title">{props.article.headline}</h2>
         <figure>
-            <img></img>
+  <img src={props.article.img}></img>
         </figure>
         </section>
-        <p className="article-description">Description</p>
-        <a href="">Read more...</a>
+        <p className="article-description">{props.article.description}</p>
+        <a href={props.article.url}>Read more...</a>
     </article>
   );
 };
