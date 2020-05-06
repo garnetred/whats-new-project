@@ -17,11 +17,11 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      local: local,
-      technology: technology,
-      entertainment: entertainment,
-      science: science,
-      health: health,
+      local,
+      technology,
+      entertainment,
+      science,
+      health,
       currentSection: 'local'
     };
     //local is an array with objects and key value pairs
