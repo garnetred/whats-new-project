@@ -1,0 +1,30 @@
+.article {
+    height: 32%;
+    margin: 2%;
+    width: 40%;
+    background: #FFFFFF;
+    border: 1px solid #9F9E9E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 2%;
+
+}
+
+.article-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+figure {
+    background-color: gray;
+    height: 85px;
+    width: 85px;
+}
+
+
+
+.article-description {
+    margin: 5% 0;
+}
+
