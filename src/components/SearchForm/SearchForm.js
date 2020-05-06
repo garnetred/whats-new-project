@@ -12,10 +12,14 @@ class SearchForm extends React.Component {
         };
     }
 
+    handleChange = (event) => {
+        this.setState({query: event.target.value})
+    }
+
     render() {
         return (
             <form>
-                <input type="text" name="search-form" value={this.state.query}/>
+                <input type="text" name="search-form" value={this.state.query} onChange={this.handleChange} tabIndex="1"/>
             </form>
         )
     }
