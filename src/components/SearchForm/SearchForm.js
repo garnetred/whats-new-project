@@ -25,15 +25,13 @@ class SearchForm extends React.Component {
 
     clearInput = () => {
         this.setState({searchTerm: ''});
-        // setTimeout(this.props.clearSearchTerm(), 5000);
-
     }
 
     render() {
         return (
             <form>
                 <input type="text" name="search-form" value={this.state.searchTerm} onChange={this.handleChange} 
-                tabIndex="1"  />
+                tabIndex="1"  aria-label="search-form"/>
                 <button className="search-form-button" type="submit" tabIndex= "2" onClick={(event) => this.createNewSearch(event)}>Search</button>
             </form>
         )

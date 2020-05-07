@@ -1,7 +1,6 @@
 import React from "react";
 import "./NewsContainer.css";
 import NewsArticle from "../NewsArticle/NewsArticle";
-import local from "../../data/local.js";
 
 // NEWSCONTAINER COMPONENT CODE GOES HERE
 
@@ -37,9 +36,10 @@ const NewsContainer = (props) => {
       {props.searchTerm === "" && articles}
       {/* {articles} */}
       {props.searchTerm && filteredArticles}
-      {props.clearSearchTerm}
+      {!filteredArticles.length && <p>No results found.</p>}
     </main>
   );
 };
+//add functionality to show an error message somehow
 
 export default NewsContainer;
