@@ -11,3 +11,15 @@ input {
     align-items: right;
     justify-content: flex-end;
 }
+
+.search-form-button {
+    margin-left: 2%;
+    background-color: #5789FF;
+    border-radius: 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 2%;
+    color: black;
+    font-weight: bold;
+    border: 0;
+}
