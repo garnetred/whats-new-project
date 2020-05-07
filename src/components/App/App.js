@@ -61,7 +61,7 @@ class App extends Component {
         </nav>
         <section className="main-page">
           <Menu changeCategory={this.changeCategory} clearSearchTerm={this.clearSearchTerm}/>
-          <NewsContainer category={currentSection} searchTerm={this.state.searchTerm}/>
+          <NewsContainer category={currentSection} searchTerm={this.state.searchTerm} clearSearchTerm={this.clearSearchTerm}/>
         </section>
       </section>
           );

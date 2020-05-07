@@ -25,7 +25,7 @@ class SearchForm extends React.Component {
 
     clearInput = () => {
         this.setState({searchTerm: ''});
-        // this.props.clearSearchTerm();
+        // setTimeout(this.props.clearSearchTerm(), 5000);
 
     }
 
