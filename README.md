@@ -14,15 +14,15 @@ In order to use this application, you can first clone down this repo.
 
 After you've navigated to the repository's location on your computer, you can `cd` into the repository, then open your terminal and run `npm install`. After this has been completed, you can run `npm start` to view the code via the React server. 
 
-### Design
+### Initial Design
 ![an image of the landing page of a news website](https://user-images.githubusercontent.com/59572865/81378310-5149c400-90c4-11ea-8688-95332d8e9099.png)
 I created the above mockup using Figma based on similar websites such as Google News. 
 
 ## Demo
 A demo of this application can be viewed below: 
 
-![](https://media.giphy.com/media/UU0rkHgZwHuNJoBTYI/giphy.gif)
+![an image of a news web site where menu items are being clicked on and search terms are being entered](https://media.giphy.com/media/UU0rkHgZwHuNJoBTYI/giphy.gif)
 
-The deployed site is available via this link: 
+The deployed site is available via this link: https://garnetred.github.io/whats-new-project/.
 
 
