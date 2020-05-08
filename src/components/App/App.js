@@ -60,7 +60,7 @@ class App extends Component {
           <SearchForm addSearchTerm={this.addSearchTerm} clearSearchTerm={this.clearSearchTerm}/>
         </nav>
         <section className="main-page">
-          <Menu changeCategory={this.changeCategory} clearSearchTerm={this.clearSearchTerm}/>
+          <Menu currentCategory={this.state.currentSection} changeCategory={this.changeCategory} clearSearchTerm={this.clearSearchTerm}/>
           <NewsContainer category={currentSection} searchTerm={this.state.searchTerm} clearSearchTerm={this.clearSearchTerm}/>
         </section>
       </section>
