@@ -43,4 +43,5 @@ html, body {
  .main-page {
    display: flex;
    flex-direction: row;
+   min-height: 100%;
  }

@@ -17,12 +17,13 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      local: local,
-      technology: technology,
-      entertainment: entertainment,
-      science: science,
-      health: health,
-      currentSection: 'local'
+      local,
+      technology,
+      entertainment,
+      science,
+      health,
+      currentSection: 'local', 
+      searchTerm: ''
     };
     //local is an array with objects and key value pairs
     console.log(this.state)
@@ -30,6 +31,16 @@ class App extends Component {
 
   changeCategory = (event) => {
     this.setState({currentSection: event.target.id})
+    this.clearSearchTerm();
+  }
+
+  addSearchTerm = (term, event) => {
+    event.preventDefault();
+    this.setState({searchTerm: term})
+  }
+
+  clearSearchTerm = () => {
+    this.setState({searchTerm: ''});
   }
 
   render() {
@@ -46,14 +57,14 @@ class App extends Component {
             alt="three horizontal bars used to open and close the menu"
           ></img>
           <h1 className="logo">That's News!</h1>
-          <SearchForm />
+          <SearchForm addSearchTerm={this.addSearchTerm} clearSearchTerm={this.clearSearchTerm}/>
         </nav>
         <section className="main-page">
-          <Menu changeCategory={this.changeCategory}/>
-          <NewsContainer category={currentSection}/>
+          <Menu changeCategory={this.changeCategory} clearSearchTerm={this.clearSearchTerm}/>
+          <NewsContainer category={currentSection} searchTerm={this.state.searchTerm} clearSearchTerm={this.clearSearchTerm}/>
         </section>
       </section>
-    );
+          );
   }
 }
 

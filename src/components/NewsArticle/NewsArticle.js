@@ -10,7 +10,7 @@ const NewsArticle = (props) => {
         <section className="article-info">
         <h2 className="article-title">{props.article.headline}</h2>
         <figure>
-  <img src={props.article.img}></img>
+  <img src={props.article.img} alt={props.article.headline}></img>
         </figure>
         </section>
         <p className="article-description">{props.article.description}</p>
