@@ -1,13 +1,13 @@
 aside {
-    width: 30%;
     background-color: #1A1818;
+    width: 30%;
 }
 
 .menu-item {
-    font-size: 40px;
     color: #F5F5F5;
-    margin-top: 10%;
+    font-size: 40px;
     font-weight: normal;
+    margin-top: 10%;
 }
 
 li {
