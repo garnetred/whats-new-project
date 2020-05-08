@@ -31,14 +31,14 @@ class SearchForm extends React.Component {
           name="search-form"
           value={this.state.searchTerm}
           onChange={this.handleChange}
-          tabIndex="1"
+          tabIndex="0"
           aria-label="search-form"
           placeholder="search"
         />
         <button
           className="search-form-button"
           type="submit"
-          tabIndex="2"
+          tabIndex="0"
           onClick={(event) => this.createNewSearch(event)}
         >
           Search
