@@ -1,20 +1,53 @@
 import React from "react";
 import "./Menu.css";
 
-// MENU COMPONENT CODE GOES HERE
-//should create some sort of onclick method that triggers a property (function) in the App.js file
-
 const Menu = (props) => {
-    console.log(props)
+  const array = [
+    { local: "Local News" },
+    { entertainment: "Entertainment" },
+    { technology: "Technology" },
+    { science: "Science" },
+    { health: "Health" },
+  ];
+
+  const menuItems = array.map((item) => (
+    <li
+      tabIndex="0"
+      id={Object.keys(item).toString()}
+      onClick={(event) => props.changeCategory(event)}
+      text={Object.values(item).toString()}
+    ></li>
+  ));
+  const allMenuItems = menuItems.map((item) => {
+    if (props.currentCategory === item.props.id) {
+      return (
+        <li
+          tabIndex="0"
+          className="selected-category"
+          id={item.props.id}
+          key={item.props.id}
+          onClick={item.props.onClick}
+        >
+          {item.props.text}
+        </li>
+      );
+    } else {
+      return (
+        <li
+          tabIndex="0"
+          id={item.props.id}
+          key={item.props.id}
+          onClick={item.props.onClick}
+        >
+          {item.props.text}
+        </li>
+      );
+    }
+  });
+
   return (
     <aside>
-      <ul className="menu-item">
-        <li tabIndex="3" id="local" onClick={event => props.changeCategory(event)}>Local News</li>
-        <li tabIndex="4" id="entertainment" onClick={event => props.changeCategory(event)}>Entertainment</li>
-        <li tabIndex="5" id="technology" onClick={event => props.changeCategory(event)}>Technology</li>
-        <li tabIndex="6" id="science" onClick={event => props.changeCategory(event)}>Science</li>
-        <li tabIndex="7" id="health" onClick={event => props.changeCategory(event)}>Health</li>
-      </ul>
+      <ul className="menu-item">{allMenuItems}</ul>
     </aside>
   );
 };

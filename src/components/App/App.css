@@ -7,32 +7,29 @@
 html, body {
   height: 100vh;
   overflow: auto;
-
 }
 
 .app {
-  /* display: flex;
-  flex-direction: row; */
-  height: 100vh;
-  width: 100%;
   font-family: 'American Typewriter', sans-serif;
+  height: 100vh;
   overflow: auto;
+  width: 100%;
 }
 
  nav {
+   align-items: center;
+   background: #1A1818;
    display: flex;
    flex-direction: row;
-   background: #1A1818;
-   align-items: center;
  }
 
  .logo {
-   white-space: nowrap;
-   font-size: 50px;
    color: #5789FF;
+   font-size: 50px;
    font-weight: bold;
-   text-align: center;
    margin-left: 2%;
+   text-align: center;
+   white-space: nowrap;
  }
 
  .horizontal-bars {

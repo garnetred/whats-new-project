@@ -1,16 +1,22 @@
 aside {
-    width: 30%;
     background-color: #1A1818;
+    width: 30%;
 }
 
 .menu-item {
-    font-size: 40px;
     color: #F5F5F5;
-    margin-top: 10%;
+    font-size: 40px;
     font-weight: normal;
+    margin-top: 10%;
 }
 
 li {
-    margin: 3% 25%;
+    display: inline-block;
     list-style-type: none;
+    margin: 3% 25%;
+}
+
+.selected-category {
+    border-bottom: 2px solid #5789FF;
+    font-style: italic;
 }

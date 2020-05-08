@@ -1,12 +1,12 @@
 .article {
-    height: 37%;
-    margin: 2%;
-    width: 40%;
     background: #FFFFFF;
+    border-radius: 5px;
     border: 1px solid #9F9E9E;
     box-sizing: border-box;
-    border-radius: 5px;
+    height: 37%;
+    margin: 2%;
     padding: 2%;
+    width: 40%;
 
 }
 
@@ -18,8 +18,8 @@
 
 figure > img{
     height: 125px;
-    width: 125px;
     object-fit: cover;
+    width: 125px;
 }
 
 .article-title {
