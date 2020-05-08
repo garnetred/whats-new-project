@@ -12,7 +12,7 @@ Clone down this repo.
 
 In order to use this application, you can first clone down this repo. 
 
-After you've navigated to the repository's location on your computer, you can `cd` into the repository, then open your terminal and run `npm install`. After this has been completed, you can run `npm start` to view the code via the React server. 
+After you've navigated to the repository's location on your computer, you can `cd` into the repository, then open your terminal and run `npm install`. After this has been completed, you can run `npm start` to view the code via the React server, typically at http://localhost:3000. 
 
 ### Initial Design
 ![an image of the landing page of a news website](https://user-images.githubusercontent.com/59572865/81378310-5149c400-90c4-11ea-8688-95332d8e9099.png)
